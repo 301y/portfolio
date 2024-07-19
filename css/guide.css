@@ -1,5 +1,6 @@
 *{margin:0; padding:0;}
-a{text-decoration:none;}
+a{text-decoration:none;
+}
 body{
     font-family: 'Pretendard';
     font-size: 16px;
@@ -9,7 +10,7 @@ body{
 
 /* 배경색상 */
 .brand1{
-    background-color: #dbd4d0;
+    background-color: #fff;
 }
 
 /* 이미지 크기 */
@@ -49,4 +50,12 @@ img{
 .btn_1 li a:hover{
 	background-color: #008b35;
 	color: #fff;
+}
+
+@media (max-width: 1320px) {
+	img{
+		width: 100%;
+		display: block;
+		margin: auto;
+	}
 }
