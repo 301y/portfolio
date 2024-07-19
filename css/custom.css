@@ -20,32 +20,6 @@ body {
   background: url(../img/bg.png);
 }
 
-#drawing_line {
-  position: relative;
-  z-index: 1500;
-  height: 0;
-}
-
-#drawing_line > svg {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  pointer-events: none;
-}
-
-#drawing_line > svg .drawing_line_polyline {
-  fill: none;
-  stroke: #d2330f;
-  stroke-width: 2;
-}
-
-#drawing_line > svg .drawing_line_circle {
-  fill: #d2330f;
-}
-
 /* header */
 header {
   width: 100%;
@@ -187,7 +161,7 @@ section {
 #left-bracket,
 #right-bracket {
   display: inline-block;
-  width: 20px;
+  width: 28px;
   text-align: center;
 }
 #fruit-text {
@@ -200,7 +174,7 @@ section {
 
 @keyframes fruit-carousel {
   0% {
-    transform: translateY(200px);
+    transform: translateY(230px);
   }
   100% {
     transform: translateY(-150px);
@@ -689,7 +663,7 @@ a.about2 {
   }
   #fruit-text {
     font-size: max(40px, 5.5vw);
-    width: 35vw;
+    width: 38vw;
   }
   .chart span strong {
     font-size: max(16px, 1.2vw);
@@ -740,7 +714,7 @@ a.about2 {
   }
   #fruit-text {
     font-size: max(30px, 10vw);
-    width: 48vw;
+    width: 56vw;
   }
   .chart span strong {
     font-size: max(16px, 3vw);
@@ -754,8 +728,14 @@ a.about2 {
   .list ul {
     grid-template-columns: repeat(2, 1fr);
   }
+  .text {
+    position: static;
+    width: 90%;
+    margin: auto;
+  }
   .mySwiper {
     height: 110vw;
+    padding: 5%;
   }
   .brandtitle h1{
     font-size: 6vw;

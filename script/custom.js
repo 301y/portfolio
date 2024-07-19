@@ -3,8 +3,7 @@ const fruits = [
   "INTJ-A",
   "🤸‍♀️성장하는",
   "디테일한",
-  "계획적인🎮🧸",
-  "👨‍💻하는",
+  "계획적인✍"
 ];
 let currentIndex = 0;
 
@@ -17,17 +16,7 @@ function displayFruit() {
 setInterval(displayFruit, 2500);
 
 $(function () {
-  // popup
-  $('.bg2 a').click(function () {
-    $('.pop1').fadeIn();
-  });
-  $('.bg3 a').click(function () {
-    $('.pop2').fadeIn();
-  });
 
-  $('.popup a').click(function () {
-    $('.popup').fadeOut();
-  });
 
   // resume
   $(".resume li").click(function(){
@@ -88,5 +77,3 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
-
-
