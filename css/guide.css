@@ -25,8 +25,8 @@ img{
 .btn_1 {
 	list-style: none;
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
+	bottom: 1vw;
+	right: 1vw;
 	text-align: center;
 	z-index: 99;
 }

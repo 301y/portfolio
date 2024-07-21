@@ -40,8 +40,8 @@ img{
 .btn_1 {
 	list-style: none;
 	position: fixed;
-	bottom: 50px;
-	right: 50px;
+	bottom: 1vw;
+	right: 1vw;
 	text-align: center;
 	z-index: 99;
 }
@@ -111,10 +111,14 @@ img{
 	margin-left: 10px;
 	font-weight: 500;
   }
-.imgset, .imgset2{
+  .imgset, .imgset2{
 	display: flex;
-	justify-content: start;
+	justify-content: space-between;
 	align-items: end;
+  }
+  .imgset2{
+	justify-content: start;
+	margin-bottom: 10px;
 
 }
 .imgset img{
@@ -132,7 +136,55 @@ img{
 	margin-right: 10px;
 }
 
+.landing, .detailpage>img{
+	width: 100%;
+	max-width: 800px;
+	margin: 0;
+}
+.imgset .webb{
+	width: 66%;
+}
+.imgsetstart{
+    align-items: start;
+}
+.centerdiv{
+	text-align: center;
 
+}
+.centerdiv img{
+	margin: auto;
+}
+.centerdiv h3{
+	text-transform: uppercase;
+}
+
+/* 인스타 */
+.imgset3{
+	width: 100%;
+	max-width: 1400px;
+	justify-content: space-between;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.imgset3>img{
+	width: 49.5%;
+	max-width: 700px;
+	margin: 0;
+	margin-bottom: 10px;
+	
+}
+.imgset4{
+	justify-content: start;
+	flex-wrap: nowrap;
+	max-width: 700px;
+}
+.imgset4 .follow{
+	width: 50%;
+}
+.imgset4 .follow:nth-child(1){
+	margin-right: 10px;
+}
 
 @media (max-width: 1320px) {
 	img{
@@ -145,6 +197,10 @@ img{
 @media (max-width: 610px) {
 	.imgset>img:nth-child(2){
 		display: none;
+	}
+	.imgsetstart>img:nth-child(2){
+		display: block;
+		width: 100%;
 	}
 	.imgset{
 		display: block;
