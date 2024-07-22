@@ -856,5 +856,6 @@ a.about2 {
   }
   .design li a{
     font-size: 2.5vw;
+    display: none;
   }
 }
