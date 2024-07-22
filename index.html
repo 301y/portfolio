@@ -25,6 +25,7 @@
   </head>
 
   <body>
+
     <!-- header -->
     <header>
       <div class="nav">
@@ -56,8 +57,9 @@
         <h3>-DESIGNER</h3>
         <h3>-YUN-JEONG</h3>
         <p>
-          <b>개</b>발하는 디<b>자이너</b> 김윤정입니다. 🐶 협업 및 문의
+          디자이너 김윤정입니다. 🐶 협업 및 문의
           how1_@naver.com
+          <br>
         </p>
         <a href="./about.html" class="about2">about me</a>
         <div class="list">
@@ -192,18 +194,17 @@
               <div class="pro_in">
                 <div class="pro_list pro_list1">
                   <div class="probg"></div>
-                  <a href="https://www.figma.com/proto/jDhhw5NMapmnxmItTVPRaP/Untitled?node-id=1-2&scaling=min-zoom&content-scaling=fixed&t=tvDluu4kvNRC4Ya9-1"
+                  <a href="./html/modu0.html"
                     class="protxt"
-                    target="_blank"
-                  >
-                    <p>Prototype</p>
+                    target="_blank">
+                    <p>Overview</p>
                     <p><img src="./img/pro_icon.png" alt="화살표" /></p>
                   </a>
                 </div>
                 <div class="pro_list pro_list2">
                   <div class="probg"></div>
                   <a href="./html/modu.html" class="protxt" target="_blank">
-                    <p>UX/UI</p>
+                    <p>Web Guide</p>
                     <p><img src="./img/pro_icon.png" alt="화살표" /></p>
                   </a>
                 </div>
@@ -250,7 +251,7 @@
                 <div class="pro_list pro_list1">
                   <div class="probg"></div>
                   <a
-                    href="#none"
+                    href="https://xd.adobe.com/view/8e06806c-b5ba-4dd3-8884-a98b3d52d30d-db55/?fullscreen"
                     class="protxt"
                     target="_blank"
                   >
@@ -283,7 +284,7 @@
                 <div class="pro_list pro_list1">
                   <div class="probg"></div>
                   <a href="./html/minhwa.html" class="protxt"  target="_blank">
-                    <p>Web content</p>
+                    <p>content</p>
                     <p><img src="./img/pro_icon.png" alt="화살표" /></p>
                   </a>
                 </div>
@@ -298,7 +299,7 @@
             </div>
           </div>
           <!-- etc -->
-          <div class="swiper-slide bg8">
+          <div class="swiper-slide bg8 scon">
             <div class="proimg">
               <div class="pro_in">
                 <div class="pro_list pro_list1">
@@ -308,19 +309,11 @@
                     class="protxt"
                     target="_blank"
                   >
-                    <p>Blog</p>
+                    <p>Photo n Blog</p>
                     <p><img src="./img/pro_icon.png" alt="화살표" /></p>
                   </a>
                 </div>
                 <div class="pro_list pro_list2">
-                  <div class="probg"></div>
-
-                  <a href="./html/photo.html" class="protxt"  target="_blank">
-                    <p>Photo</p>
-                    <p><img src="./img/pro_icon.png" alt="화살표" /></p>
-                  </a>
-                </div>
-                <div class="pro_list pro_list3">
                   <div class="probg"></div>
 
                   <a href="./html/Archive.html" class="protxt"  target="_blank">
@@ -341,77 +334,24 @@
     </section>
     <!-- ./section -->
 
-    <!-- copy
+
+    
+
     <p class="copy">
-      ⓒCopyright All rights reserved | This template is made with by ooo
+      ⓒCopyright All rights reserved | This template is made with by yunjeong
     </p>
-   ./copy -->
 
-    <!-- artwork popup1 -->
-    <div class="popup pop1">
-      <div class="popup_in">
-        <img src="./img/2.jpg" alt="2" />
+    <div class="mouse" id="mouseElement">
+      이미지 위에서 휠을 굴리면<br> 다음 프로젝트로 쉽게 이동할 수 있습니다. <br>
+      <div class="eng">
+        <span>Please wait a moment　</span> 
+        <img src="./img/sand.gif" alt="모래시계 아이콘">
       </div>
-      <a href="#non3">x</a>
     </div>
-    <!-- ./artwork popup1 -->
-
-    <!-- artwork popup2 -->
-    <div class="popup pop2">
-      <div class="popup_in">
-        <img src="./img/3.jpg" alt="3" />
-      </div>
-      <a href="#non3">x</a>
-    </div>
-    <!-- ./artwork popup2 -->
 
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="./script/custom.js"></script>
-    <script>
-      const fruits = [
-        "🤓",
-        "INTJ-A",
-        "무궁무진한",
-        "디테일한",
-        "🌸",
-        "발전하는",
-      ];
-      let currentIndex = 0;
-
-      function displayFruit() {
-        document.getElementById("fruit-text").textContent =
-          fruits[currentIndex];
-        currentIndex = (currentIndex + 1) % fruits.length;
-      }
-
-      setInterval(displayFruit, 2000);
-    </script>
-    <script>
-      // 리스트 클릭 이벤트 핸들러
-      const links = document.querySelectorAll(".list a");
-      links.forEach((link, index) => {
-        link.addEventListener("click", (e) => {
-          e.preventDefault(); // 기본 링크 동작 막기
-          swiper.slideTo(index); // 해당 인덱스의 슬라이드로 이동
-        });
-      });
-
-      // 슬라이드 변경 이벤트 핸들러
-      swiper.on("slideChange", function () {
-        // 현재 슬라이드 인덱스 가져오기
-        const currentIndex = swiper.activeIndex;
-
-        // 리스트 항목 활성화 상태 변경
-        links.forEach((link, index) => {
-          if (index === currentIndex) {
-            link.classList.add("active");
-          } else {
-            link.classList.remove("active");
-          }
-        });
-      });
-    </script>
   </body>
 </html>

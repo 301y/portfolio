@@ -169,7 +169,7 @@ section {
   display: inline-block;
   width: 14vw;
   text-align: center;
-  animation: fruit-carousel 2.5s cubic-bezier(0.35, 0.66, 0.9, 0.76) infinite;
+  animation: fruit-carousel 2.3s cubic-bezier(0.35, 0.66, 0.9, 0.76) infinite;
 }
 
 @keyframes fruit-carousel {
@@ -261,6 +261,53 @@ a.about2 {
   font-size: max(12px, 0.8vw);
 }
 
+
+/* 휠안내 */
+.mouse{
+  font-family: "Pretendard";
+  font-weight: 600;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  text-align: center;
+  flex-direction:column;
+  line-height: 1.4;
+  animation: ani11 1.5s 2.8s forwards;
+}
+@keyframes ani11{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+.mouse span{
+  font-size: 1vw;
+  color: #ffffffa5;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.eng{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.eng img{
+  height: 30px;
+  display: block;
+  margin-top: 10px;
+}
+
 /* portfolio */
 .mySwiper {
   width: 70%;
@@ -324,7 +371,7 @@ a.about2 {
   background-size: cover;
 }
 .bg8 .proimg {
-  background: url(../img/pro4.png) 50% 60% no-repeat;
+  background: url(../img/pro8.jpg) 50% 60% no-repeat;
   background-size: cover;
 }
 
@@ -401,6 +448,49 @@ a.about2 {
 .bg3 .pro_list3 {
   background: url(../img/pro3_3.jpg) no-repeat 50%;
   background-size: auto 100%;
+}
+
+.bg4 .pro_list1 {
+  background: url(../img/prj4/modu-ss.png) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+.bg4 .pro_list2 {
+  background: url(../img/prj4/modu_ss2.jpg) no-repeat 50%;
+  background-size: auto 100%;
+}
+
+.bg5 .pro_list1 {
+  background: url(../img/prj5/s1.png) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+
+.bg6 .pro_list1 {
+  background: url(../img/prj6/s1.png) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+.bg6 .pro_list2 {
+  background: url(../img/prj6/s2.png) no-repeat 50%;
+  background-size: auto 100%;
+}
+
+.bg7 .pro_list1 {
+  background: url(../img/prj7/s1.png) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+
+.bg8 .pro_list1 {
+  background: url(../img/prj8/s1.jpg) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
+}
+.bg8 .pro_list2 {
+  background: url(../img/prj8/s2.jpg) no-repeat 50%;
+  background-size: auto 100%;
+  background-color: #fff;
 }
 
 
@@ -592,7 +682,7 @@ a.about2 {
 }
 
 .skill li {
-  flex: 1 1 25%;
+  flex: 1 1 33%;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -602,8 +692,8 @@ a.about2 {
 }
 
 .skill .chart {
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   position: relative;
   text-align: center;
   margin-right: 1em;
@@ -699,6 +789,9 @@ a.about2 {
   }
   .brandtitle h1{
     font-size: 6vw;
+  }
+  .mouse{
+    display: none;
   }
 }
 

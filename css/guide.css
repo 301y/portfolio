@@ -15,8 +15,8 @@ body{
 
 /* 이미지 크기 */
 img{
-    width: 80%;
-	max-width:1320px;
+    width: 90%;
+	max-width:1600px;
     display: block;
     margin: auto;
 }
@@ -30,7 +30,9 @@ img{
 	text-align: center;
 	z-index: 99;
 }
-
+.btn_1 li:nth-child(1){
+	display: none;
+}
 .btn_1 li {
 	margin: 10px;
 }

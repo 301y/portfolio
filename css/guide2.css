@@ -45,7 +45,9 @@ img{
 	text-align: center;
 	z-index: 99;
 }
-
+.btn_1 li:nth-child(1){
+	display: none;
+}
 .btn_1 li {
 	margin: 10px;
 }
@@ -184,6 +186,14 @@ img{
 }
 .imgset4 .follow:nth-child(1){
 	margin-right: 10px;
+}
+
+.minhwa img{
+	margin-bottom: 20px;
+}
+.archive img{
+	width: 100%;
+	max-width: none;
 }
 
 @media (max-width: 1320px) {

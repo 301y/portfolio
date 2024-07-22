@@ -1,8 +1,8 @@
 const fruits = [
   "🤓💡",
-  "INTJ-A",
   "🤸‍♀️성장하는",
   "디테일한",
+  "무한대♾️",
   "계획적인✍"
 ];
 let currentIndex = 0;
@@ -13,7 +13,7 @@ function displayFruit() {
   currentIndex = (currentIndex + 1) % fruits.length;
 }
 
-setInterval(displayFruit, 2500);
+setInterval(displayFruit, 2300);
 
 $(function () {
 
@@ -32,7 +32,7 @@ $(function () {
     lineCap: 'butt',
     barColor: '#333',
     trackColor: "#00000013",
-    size: 250,
+    size: 300,
     animate: 1000
   });
 });
@@ -77,3 +77,41 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const mouseElement = document.getElementById("mouseElement");
+  
+  // 애니메이션 완료 후 display: none으로 변경
+  setTimeout(() => {
+    mouseElement.style.display = "none";
+  }, 3800); // 1.5초 애니메이션 + 2.5초 대기 = 4초
+});
+
+
+
+
+
+ // 리스트 클릭 이벤트 핸들러
+ const links = document.querySelectorAll(".list a");
+ links.forEach((link, index) => {
+   link.addEventListener("click", (e) => {
+     e.preventDefault(); // 기본 링크 동작 막기
+     swiper.slideTo(index); // 해당 인덱스의 슬라이드로 이동
+   });
+ });
+
+ // 슬라이드 변경 이벤트 핸들러
+ swiper.on("slideChange", function () {
+   // 현재 슬라이드 인덱스 가져오기
+   const currentIndex = swiper.activeIndex;
+
+   // 리스트 항목 활성화 상태 변경
+   links.forEach((link, index) => {
+     if (index === currentIndex) {
+       link.classList.add("active");
+     } else {
+       link.classList.remove("active");
+     }
+   });
+ });
