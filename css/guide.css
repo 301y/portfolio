@@ -12,6 +12,9 @@ body{
 .brand1{
     background-color: #fff;
 }
+.koti img{
+	margin-bottom:5px;
+}
 
 /* 이미지 크기 */
 img{
